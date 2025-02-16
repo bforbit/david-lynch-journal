@@ -1,0 +1,325 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", serif;
+    font-size: 18;
+    width: 100%;
+    color: #505050;
+}
+
+/********************
+NAVIGATION
+********************/
+
+nav {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    color: #0E0E0E;
+}
+
+.nav-left {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-left: 5px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+}
+
+li {
+    padding-right: 20px;
+    text-transform:uppercase;
+    color: #090909;
+}
+
+a {
+    text-decoration: none;
+    color: #0E0E0E;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    font-size: 1.10rem;
+}
+
+/********************
+FEATURED POST
+********************/
+
+body {
+    background-color: #FAFAFA;
+}
+
+.featured-article {
+    position: relative;
+}
+
+.featured-image {
+    width: 100%;
+    height: 75%;
+}
+
+.featured-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ECECEC;
+    padding-left: 20px;
+    font-size: 0.88rem;
+}
+
+.featured-text h2 {
+    font-size: 2.22rem;
+    margin-top: 15px;
+    margin-bottom: -5px;
+    color: #ECECEC;
+}
+
+.featured-text .date {
+    color: #ECECEC;
+}
+
+/********************
+BlOG-POSTS
+********************/
+
+.blogposts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content:center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 25px;
+}
+
+article {
+    padding: 10px 25px;
+}
+
+article img {
+    width: 100%;
+}
+
+.article-text {
+    text-align: left;
+}
+
+.date, h2 {
+    color: #141414;
+    margin-bottom: -10px;
+}
+
+.date {
+    font-size: 0.75rem;
+    text-transform:uppercase;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+article p {
+    font-size: 0.88rem;
+}
+
+h3 {
+    color: #141414;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 20px;
+}
+
+/********************
+SINGLE BlOG-POST
+********************/
+.blogpost-title {
+    margin: 50;
+}
+
+.single-blogpost-subtitle {
+    font-size: 0.75rem;
+    padding-top: 10px;
+}
+
+.single-blogpost-img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.single-blogpost {
+    margin: 0 50px 50px 50px;
+}
+
+.single-blogpost p, .lyrics {
+    font-size: 1.02rem;
+}
+
+.single-blogpost-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.lyrics {
+    white-space: pre-wrap;
+    font-style:italic;
+}
+
+/********************
+FOOTER
+********************/
+footer {
+    color: #ECECEC;
+    background-color: 202020;
+    padding: 0.5em;
+    margin-top: 50px;
+    text-align: center;
+    align-content: center;
+    height: 105px;
+}
+
+footer p {
+    margin: 0;
+    padding: 2px;
+    font-size: 0.70rem;
+}
+
+footer a, footer a:visited {
+    color: #ECECEC;
+}
+
+/********************
+ABOUT
+********************/
+.about-flex {
+    display: flex;
+    margin: 50px;
+    align-items: center;
+}
+
+.about-text-flex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.about-text-flex h2 {
+    font-size: 2rem;
+}
+
+.about-pic {
+    border-radius: 100%;
+    width: 182px;
+}
+
+.about {
+    margin: 40px 100px;
+}
+
+.about-text-flex p, .about p {
+    font-size: 0.90rem;
+    line-height:1.2rem;
+}
+
+/********************
+MEDIA QUERIES
+********************/
+
+@media(max-width: 768px) {
+    nav {
+        padding-bottom: 15px;
+    }
+
+    h1 {
+        font-size: .75rem;
+    }
+
+    ul {
+        font-size: .9rem;
+    }
+
+    nav img {
+        width: 15%;
+    }
+
+    .featured-image {
+        height: auto;
+    }
+
+    .blogposts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .about-text-flex h2 {
+        font-size: 1.8rem;
+    }
+
+    .about {
+        margin: 40px;
+    }
+
+    .single-blogpost-img {
+        width: 100%;
+    }
+
+    .single-blogpost p, .lyrics {
+        font-size: 0.88rem;
+        }
+
+}
+
+@media(max-width: 480px) {
+    .featured-image {
+        height: 25%;
+    }
+
+    article {
+        padding-bottom: 5px;
+    }
+
+    .featured-text p,
+        article p {
+        font-size: .8rem;
+    }
+        
+    .featured-text h2,
+        article h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        padding-bottom: 5px;
+    }
+
+    ul {
+        font-size: .8rem;
+    }
+}
