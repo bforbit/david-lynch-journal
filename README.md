@@ -1,3 +1,11 @@
+My version of the "Learning Journal" solo project on Scrimba's Responsive Design module.
+
+I created this project locally, and uploaded the final version here.
+
+Start Date: January 28, 2025
+End Date: February 17, 2025
+
+--------------
 # cNP6Gwc6
 
 Quick start:
